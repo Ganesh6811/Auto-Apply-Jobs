@@ -16,7 +16,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://auto-apply-jobs.vercel.app", 
+    origin: "https://auto-apply-jobs-weay.vercel.app", 
     credentials: true,  
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],   
     allowedHeaders: ["Content-Type", "Authorization"],  
