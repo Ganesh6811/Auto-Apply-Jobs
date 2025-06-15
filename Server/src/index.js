@@ -13,14 +13,15 @@ dotenv.config();
 const port = process.env.PORT;
 const app = express();
 
-app.use(bodyParser.json());
-app.use(cookieParser());
 app.use(cors({
     origin: "https://auto-apply-jobs-weay.vercel.app", 
     credentials: true,  
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],   
     allowedHeaders: ["Content-Type", "Authorization"],  
-}))
+}));
+app.use(bodyParser.json());
+app.use(cookieParser());
+
 
 app.use("/auth", authRoute); 
 app.use("/apply", applyJobsRoute);
