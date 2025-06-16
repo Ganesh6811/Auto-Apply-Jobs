@@ -18,7 +18,25 @@ function App() {
   }, [])
 
   if (isLoading) {
-    return (<p>Loading....</p>)
+    return (<div className="w-screen h-screen bg-gradient-to-br from-black to-indigo-900 flex justify-center items-center">
+        <div className="w-[300px] flex flex-col gap-20 justify-center items-center">
+
+           
+          <div className="flex gap-4 items-end">
+            <div className="w-5 h-[120px] bg-[#f74cf7] rounded-full shadow-lg shadow-cyan-500/50 animate-bounce" style={{ animationDelay: `0s`, marginTop: '20px' }}></div>
+            <div className="w-5 h-[140px] bg-[#f74cf7] rounded-full shadow-lg shadow-cyan-500/50 animate-bounce" style={{ animationDelay: `0.15s`, marginTop: '10px' }}></div>
+            <div className="w-5 h-[120px] bg-[#f74cf7] rounded-full shadow-lg shadow-cyan-500/50 animate-bounce" style={{ animationDelay: `0.3s`, marginTop: '20px' }}></div>
+            <div className="w-5 h-[140px] bg-[#f74cf7] rounded-full shadow-lg shadow-cyan-500/50 animate-bounce" style={{ animationDelay: `0.45s`, marginTop: '20px' }}></div>
+            <div className="w-5 h-[140px] bg-[#f74cf7] rounded-full shadow-lg shadow-cyan-500/50 animate-bounce" style={{ animationDelay: `0.6s`, marginTop: '10px' }}></div>
+            <div className="w-5 h-[120px] bg-[#f74cf7] rounded-full shadow-lg shadow-cyan-500/50 animate-bounce" style={{ animationDelay: `0.75s`, marginTop: '20px' }}></div>
+          </div>
+
+           
+          <p className=" text-[#a193e2] text-4xl tracking-[0.4em] font-semibold opacity-80 animate-pulse">
+            LOADING
+          </p>
+        </div>
+      </div>)
   }
 
   return (
